@@ -3,14 +3,14 @@
 
 module.exports = {
     google: {
-        clientID: "100591065854-mf9evnm5pgdlt3pd3unv9os3o1gokcds.apps.googleusercontent.com",
-        clientSecret: "xx7XJKj9aFsejEzLuaLMtHM6"
+        clientID: "process.env.GOOGLE_CLIENT_ID",
+        clientSecret: "process.env.GOOGLE_SECRET"
     },
     mongodb: {
-        mongoURI: 'mongodb+srv://ghemhope:ghemhope@netninjatuts.6jbjk.mongodb.net/<dbname>?retryWrites=true&w=majority',
+        mongoURI: process.env.MONGO_URI,
         
     },
     session: {
-        cookieKey: "netninjaisawesome"
+        cookieKey: "process.env.COOKIE_SECRET"
     }
 };
